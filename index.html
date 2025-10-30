@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moje Filmy</title>
+  <title>videos</title>
   <style>
     body {
       background-color: #000;
@@ -21,17 +21,17 @@
   </style>
 </head>
 <body>
-  <h1>🎥 Moje Filmy</h1>
+  <h1>videos</h1>
   <div id="videos"></div>
 
   <script>
     // Lista nazw plików w folderze "filmy"
-    const filmy = ["film1.mp4", "film2.mp4", "film3.mp4"];
+    const videos = ["videos1.mp4", "videos2.mp4", "videos3.mp4"];
 
     const container = document.getElementById("videos");
     filmy.forEach(nazwa => {
       const vid = document.createElement("video");
-      vid.src = "filmy/" + nazwa;
+      vid.src = "videos/" + nazwa;
       vid.controls = true;
       vid.autoplay = true;
       vid.muted = true; // autoplay działa tylko, jeśli film jest wyciszony
