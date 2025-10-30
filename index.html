@@ -26,12 +26,12 @@
 
   <script>
     // Lista nazw plików w folderze "filmy"
-    const videos = ["videos1.mp4", "videos2.mp4", "videos3.mp4"];
+    const videos = ["gratulacje.mp4", "videos2.mp4", "videos3.mp4"];
 
     const container = document.getElementById("videos");
     filmy.forEach(nazwa => {
       const vid = document.createElement("video");
-      vid.src = "videos/" + nazwa;
+      vid.src = "filmy/" + nazwa;
       vid.controls = true;
       vid.autoplay = true;
       vid.muted = true; // autoplay działa tylko, jeśli film jest wyciszony
